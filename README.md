@@ -1,46 +1,114 @@
-# Welcome to your Expo app 👋
+# Saúde Plural — Repositório do Projeto
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este repositório contém o código-fonte do aplicativo **Saúde Plural**, desenvolvido inicialmente pelo Stevão e continuado pelo Mateus Matos e pela Maria.
 
-## Get started
+## 📱 Sobre o Projeto
 
-1. Install dependencies
+O **Saúde Plural** é um aplicativo mobile desenvolvido em **React Native (Expo)** com foco em facilitar o acesso a serviços de saúde, registro rápido e navegação simples. O aplicativo segue um design baseado no Figma (link abaixo).
 
-   ```bash
-   npm install
-   ```
+## 🎨 Figma do Projeto
 
-2. Start the app
+**Figma:** *[INSIRA AQUI O LINK DO FIGMA](https://www.figma.com/design/lYjyB4MgoW0wIB5V8VAmLn/PI---Sa%C3%BAde-Plural--Copy-?node-id=0-1&t=cBEdgyf3yeFqLVH1-1)*
 
-   ```bash
-   npx expo start
-   ```
+As próximas três telas que devem ser desenvolvidas estão marcadas dentro do Figma.
 
-In the output, you'll find options to open the app in a
+## 📂 Estrutura do Projeto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+saude-plural/
+│
+├── app/
+│   ├── index.tsx
+│   ├── login.tsx
+│   ├── register.tsx
+│   ├── modal.tsx
+│   └── (tabs)/
+│       └── _layout.tsx
+│
+├── assets/
+│   └── images/
+│       ├── logo.png (ou logo personalizada)
+│       ├── icon.png
+│       ├── splash-icon.png
+│       └── outros ícones do sistema
+│
+├── components/
+├── constants/
+├── hooks/
+├── package.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🏗️ O que já foi implementado
 
-## Learn more
+### ✔️ 1. Estrutura do projeto com Expo
 
-To learn more about developing your project with Expo, look at the following resources:
+* Pasta organizada por rotas
+* Navegação com estrutura de tabs pelo _layout
+* Configuração inicial do Expo
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### ✔️ 2. Telas desenvolvidas
+
+* **Login**
+* **Cadastro (Register)**
+* **Tela inicial (Index)**
+* **Tela de Modal**
+
+### ✔️ 3. Integração da logo e identidade visual
+
+* Inserida a pasta `assets/images`
+* Ajustes no `register.tsx` para carregar a nova logo
+* Personalização do header com texto *Saúde Plural*
+
+### ✔️ 4. Layout funcional seguindo o Figma
+
+* Componentes e espaçamentos fiéis ao design
+* Alterações permitidas: cores, logo e melhorias visuais
+
+## 🧭 Próximas telas a serem desenvolvidas
+
+Os próximos responsáveis (**Mateus Matos** e **Maria**) deverão criar as **3 próximas telas indicadas no Figma**.
+
+Cada tela já possui:
+
+* layout definido
+* ordenação correta
+* componentes indicados
+
+**Atenção:** Seguir o padrão atual de componentes e organização.
+
+## 🛠️ Como rodar o projeto
+
+```bash
+npm install
+npm start
+```
+
+Ou
+
+```bash
+npx expo start
+```
+
+O app pode ser aberto via Expo Go no celular.
+
+## 📝 Contribuição
+
+### Para Mateus e Maria:
+
+1. Criar uma branch com seu nome.
+2. Implementar as telas seguintes.
+3. Manter o mesmo padrão visual e estrutural.
+4. Antes de enviar, testar no celular pelo Expo.
+5. Abrir Pull Request para revisão.
+
+## 🔗 Repositório GitHub
+
+**GitHub:** *[INSIRA AQUI O LINK DO REPOSITÓRIO](https://github.com/Stevaoo/SaudePluralAppMobile)*
+
+---
+
+Qualquer dúvida, fale com o Stevão — responsável pela primeira fase do projeto.
 
 ## Join the community
 
